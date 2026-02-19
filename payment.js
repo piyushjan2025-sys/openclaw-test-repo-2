@@ -1,6 +1,5 @@
 const http = require("http");
 const axios = require("axios");
-const PAYMENT_SERVICE_URL = "https://payment.example.com/pay";
 
 const server = http.createServer(async (req, res) => {
   if (req.url !== "/pay") {
@@ -16,7 +15,7 @@ const server = http.createServer(async (req, res) => {
   }
 
   try {
-    const response = await axios.post(PAYMENT_SERVICE_URL, {
+    const response = await axios.post("https://payment.example.com/pay", {
       amount: 100
     });
     res.statusCode = 200;
