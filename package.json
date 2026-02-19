@@ -1,20 +1,19 @@
 {
   "name": "openclaw-test-repo-2",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Test repository for OpenClaw",
+  "main": "buggy.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/piyushjan2025-sys/openclaw-test-repo-2.git"
+  "dependencies": {
+    "http": "0.0.1-security"
   },
-  "keywords": [],
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^6.3.3"
+  },
+  "keywords": ["test", "openclaw"],
   "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/piyushjan2025-sys/openclaw-test-repo-2/issues"
-  },
-  "homepage": "https://github.com/piyushjan2025-sys/openclaw-test-repo-2#readme"
+  "license": "ISC"
 }
