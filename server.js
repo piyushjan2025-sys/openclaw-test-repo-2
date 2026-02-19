@@ -8,11 +8,13 @@ const server = http.createServer(async (req, res) => {
     res.end("Route not found");
     return;
   }
+
   if (req.method !== "POST") {
     res.statusCode = 405;
     res.end("Method not allowed");
     return;
   }
+
   try {
     const response = await axios.post(PAYMENT_SERVICE_URL, {
       amount: 100
